@@ -132,7 +132,7 @@
 		<key>Secure</key>
 		<false/>
 		<key>Timeout</key>
-		<integer>1</integer>
+		<integer>3</integer>
 	</dict>
 	<key>BootGraphics</key>
 	<dict>
@@ -191,7 +191,7 @@
 				<key>hda-gfx</key>
 				<string>onboard-1</string>
 				<key>layout-id</key>
-				<data>AAAAAA==</data>
+				<data>DgAAAA==</data>
 				<key>model</key>
 				<string>Cannon Point-LP High Definition Audio Controller</string>
 			</dict>
@@ -204,12 +204,6 @@
 				<key>device_type</key>
 				<string>VGA compatible controller</string>
 				<key>enable-hdmi-dividers-fix</key>
-				<data>AQAAAA==</data>
-				<key>framebuffer-con1-enable</key>
-				<data>AQAAAA==</data>
-				<key>framebuffer-con1-type</key>
-				<data>AAgAAA==</data>
-				<key>framebuffer-patch-enable</key>
 				<data>AQAAAA==</data>
 				<key>hda-gfx</key>
 				<string>onboard-1</string>
@@ -240,11 +234,6 @@
 			<string>Preboot</string>
 			<string>Recovery</string>
 		</array>
-		<key>Mouse</key>
-		<dict>
-			<key>Enabled</key>
-			<false/>
-		</dict>
 		<key>Scan</key>
 		<dict>
 			<key>Entries</key>
@@ -329,9 +318,9 @@
 		<key>CsrActiveConfig</key>
 		<string>0x67</string>
 		<key>MLB</key>
-		<string>C07951130GUJA</string>
+		<string>C07829101GU1H</string>
 		<key>ROM</key>
-		<data>p92M1SJG</data>
+		<data>VQdqiH7+</data>
 	</dict>
 	<key>SMBIOS</key>
 	<dict>
@@ -346,7 +335,7 @@
 		<key>BoardManufacturer</key>
 		<string>Apple Inc.</string>
 		<key>BoardSerialNumber</key>
-		<string>C07951130GUJA</string>
+		<string>C07829101GU1H</string>
 		<key>BoardType</key>
 		<integer>10</integer>
 		<key>BoardVersion</key>
@@ -376,16 +365,16 @@
 		<key>ProductName</key>
 		<string>Macmini8,1</string>
 		<key>SerialNumber</key>
-		<string>C07ZVJYGJYVX</string>
+		<string>C07X3RZMJYVX</string>
 		<key>SmUUID</key>
-		<string>660D39DB-2372-4E5D-B351-511D06D52246</string>
+		<string>4EDD8A4B-1051-4004-938E-0998DF887EFE</string>
 		<key>Version</key>
 		<string>1.0</string>
 	</dict>
 	<key>SystemParameters</key>
 	<dict>
 		<key>CustomUUID</key>
-		<string>967DDA1E-FECA-4928-ADB7-D8CE9244BA60</string>
+		<string>356907AE-CD24-4BD2-B4E7-BDEE664A7402</string>
 		<key>InjectKexts</key>
 		<string>Detect</string>
 		<key>InjectSystemID</key>
