@@ -4,12 +4,29 @@
 <dict>
 	<key>ACPI</key>
 	<dict>
+		<key>AutoMerge</key>
+		<true/>
 		<key>DSDT</key>
 		<dict>
 			<key>DropOEM_DSM</key>
 			<false/>
+			<key>Fixes</key>
+			<dict>
+				<key>FixWAK</key>
+				<true/>
+			</dict>
 			<key>Patches</key>
 			<array>
+				<dict>
+					<key>Comment</key>
+					<string>Fix RTC _STA bug</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>oAqTU1RBUwE=</data>
+					<key>Replace</key>
+					<data>oAqRCv8L//8=</data>
+				</dict>
 				<dict>
 					<key>Comment</key>
 					<string>change _OSI to XOSI</string>
@@ -84,16 +101,6 @@
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>rename _RMV to XRMV</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>X1JNVg==</data>
-					<key>Replace</key>
-					<data>WFJNVg==</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
 					<string>Fix NUC BIOS DSDT Device(RTC)</string>
 					<key>Disabled</key>
 					<false/>
@@ -122,7 +129,7 @@
 		<key>Arguments</key>
 		<string>dart=0 darkwake=0 slide=0</string>
 		<key>DefaultVolume</key>
-		<string>mac</string>
+		<string>MACOS</string>
 		<key>HibernationFixup</key>
 		<false/>
 		<key>NeverHibernate</key>
@@ -137,7 +144,7 @@
 	<key>BootGraphics</key>
 	<dict>
 		<key>UIScale</key>
-		<integer>1</integer>
+		<integer>2</integer>
 	</dict>
 	<key>CPU</key>
 	<dict>
@@ -146,11 +153,6 @@
 	</dict>
 	<key>Devices</key>
 	<dict>
-		<key>Audio</key>
-		<dict>
-			<key>Inject</key>
-			<string>No</string>
-		</dict>
 		<key>FakeID</key>
 		<dict>
 			<key>#IntelGFX</key>
@@ -160,22 +162,12 @@
 		<dict>
 			<key>PciRoot(0)/Pci(0x02,0)</key>
 			<dict>
-				<key>#AAPL,ig-platform-id</key>
-				<data>AAAAAA==</data>
-				<key>framebuffer-con0-3e9b0007-alldata</key>
-				<data>AQUJAAAIAADHAwAA</data>
-				<key>framebuffer-con0-59120000-alldata</key>
-				<data>AQUJAAAIAACHAQAA</data>
-				<key>framebuffer-con0-enable</key>
-				<integer>1</integer>
-				<key>framebuffer-con1-3ea50000-alldata</key>
-				<data>AQUJAAAIAACHAQAA</data>
-				<key>framebuffer-con1-59270000-alldata</key>
-				<data>AQUJAAAIAACHAQAA</data>
 				<key>framebuffer-con1-enable</key>
-				<integer>1</integer>
+				<integer>0</integer>
+				<key>framebuffer-con1-type</key>
+				<data>AAgAAA==</data>
 				<key>framebuffer-patch-enable</key>
-				<integer>1</integer>
+				<integer>0</integer>
 			</dict>
 			<key>PciRoot(0)/Pci(0x1f,3)</key>
 			<dict>
@@ -205,6 +197,24 @@
 				<string>VGA compatible controller</string>
 				<key>enable-hdmi-dividers-fix</key>
 				<data>AQAAAA==</data>
+				<key>enable-hdmi20</key>
+				<data>AQAAAA==</data>
+				<key>framebuffer-con0-enable</key>
+				<data>AQAAAA==</data>
+				<key>framebuffer-con0-pipe</key>
+				<data>EgAAAA==</data>
+				<key>framebuffer-con1-enable</key>
+				<data>AQAAAA==</data>
+				<key>framebuffer-con1-pipe</key>
+				<data>EgAAAA==</data>
+				<key>framebuffer-con2-enable</key>
+				<data>AQAAAA==</data>
+				<key>framebuffer-con2-pipe</key>
+				<data>EgAAAA==</data>
+				<key>framebuffer-patch-enable</key>
+				<data>AQAAAA==</data>
+				<key>framebuffer-unifiedmem</key>
+				<data>AAAAgA==</data>
 				<key>hda-gfx</key>
 				<string>onboard-1</string>
 				<key>model</key>
@@ -223,6 +233,8 @@
 	</dict>
 	<key>DisableDrivers</key>
 	<array>
+		<string>AppleImageCodec</string>
+		<string>AppleKeyAggregator</string>
 		<string>VBoxHfs</string>
 	</array>
 	<key>GUI</key>
@@ -234,6 +246,8 @@
 			<string>Preboot</string>
 			<string>Recovery</string>
 		</array>
+		<key>Language</key>
+		<string>en:0</string>
 		<key>Scan</key>
 		<dict>
 			<key>Entries</key>
@@ -245,8 +259,10 @@
 			<key>Tool</key>
 			<true/>
 		</dict>
+		<key>ScreenResolution</key>
+		<string>2560x1440</string>
 		<key>Theme</key>
-		<string>SimpleThemeDark</string>
+		<string>MaterialDark</string>
 	</dict>
 	<key>Graphics</key>
 	<dict>
@@ -262,6 +278,10 @@
 			<key>Intel</key>
 			<false/>
 		</dict>
+		<key>LoadVBios</key>
+		<false/>
+		<key>PatchVBios</key>
+		<false/>
 	</dict>
 	<key>KernelAndKextPatches</key>
 	<dict>
@@ -318,9 +338,9 @@
 		<key>CsrActiveConfig</key>
 		<string>0x67</string>
 		<key>MLB</key>
-		<string>C07829101GU1H</string>
+		<string>C07913403QXA8</string>
 		<key>ROM</key>
-		<data>VQdqiH7+</data>
+		<data>6O4huyWW</data>
 	</dict>
 	<key>SMBIOS</key>
 	<dict>
@@ -335,7 +355,7 @@
 		<key>BoardManufacturer</key>
 		<string>Apple Inc.</string>
 		<key>BoardSerialNumber</key>
-		<string>C07829101GU1H</string>
+		<string>C07805500CD1M</string>
 		<key>BoardType</key>
 		<integer>10</integer>
 		<key>BoardVersion</key>
@@ -365,18 +385,18 @@
 		<key>ProductName</key>
 		<string>Macmini8,1</string>
 		<key>SerialNumber</key>
-		<string>C07X3RZMJYVX</string>
+		<string>C07W60UXJYVX</string>
 		<key>SmUUID</key>
-		<string>4EDD8A4B-1051-4004-938E-0998DF887EFE</string>
+		<string>7F05FF1E-EF48-4E8F-8B23-3B9506BB2596</string>
 		<key>Version</key>
 		<string>1.0</string>
 	</dict>
 	<key>SystemParameters</key>
 	<dict>
 		<key>CustomUUID</key>
-		<string>356907AE-CD24-4BD2-B4E7-BDEE664A7402</string>
+		<string>909A4D5C-29A7-4040-B8E0-A7D62F0DC377</string>
 		<key>InjectKexts</key>
-		<string>Detect</string>
+		<string>Yes</string>
 		<key>InjectSystemID</key>
 		<true/>
 	</dict>
