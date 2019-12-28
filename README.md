@@ -1,6 +1,9 @@
-# NUC8I5BEH EFI macOS Mojave
+# NUC8I5BEH EFI for Mojave and Catalina
 
 ## 更新
+### 2019-12-28
+
+    1. 解决了开机有几率无法开机的情况，并兼容了 Catalina 10.15
 
 ### 2019-12-24
 
