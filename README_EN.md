@@ -12,7 +12,7 @@
 
 ## Hardware Specification
 
-| 硬件           | 型号                 | 备注                                 |
+| Hardware       | Model                | Others                               |
 | -------------- | -------------------- | ------------------------------------ |
 | Board Model    | NUC8I5BEH            |                                      |
 | BIOS Version   | 75                   |                                      |
