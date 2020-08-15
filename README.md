@@ -1,5 +1,7 @@
 # NUC8I5BEH EFI for Catalina
 
+## [English](./README_EN.md)
+
 ## 更新
 
 ### 2020-08-15
