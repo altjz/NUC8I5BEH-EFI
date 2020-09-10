@@ -71,6 +71,8 @@
 
 4. 网络速度监控，由于走以太网之后，下行的网络速度无法监控，解决方案是，增加一个桥接接口，可以参照这里 [网速监控下载速度一直是0](https://github.com/OpenIntelWireless/itlwm/issues/172)
 
+5. 网速 目前只支持 20Mhz，请参照 [https://github.com/OpenIntelWireless/itlwm/issues/253](OpenIntelWireless/itlwm#253)，后续的 40/80/160 AC/AX 作者更新后会跟进
+
 ## 补充说明
 
 - Wifi/蓝牙：使用的是[itlwm](https://github.com/OpenIntelWireless/itlwm)，是走以太网协议，Wifi 客户端请下载 [HeliPort](https://github.com/OpenIntelWireless/HeliPort)，可以支持界面选择无线网络，（记得在 BIOS 把蓝牙 和 WIFI 打开）
