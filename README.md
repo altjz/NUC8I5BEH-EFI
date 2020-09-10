@@ -71,7 +71,7 @@
 
 4. 网络速度监控，由于走以太网之后，下行的网络速度无法监控，解决方案是，增加一个桥接接口，可以参照这里 [网速监控下载速度一直是0](https://github.com/OpenIntelWireless/itlwm/issues/172)
 
-5. 网速 目前只支持 20Mhz，请参照 [https://github.com/OpenIntelWireless/itlwm/issues/253](OpenIntelWireless/itlwm#253)，后续的 40/80/160 AC/AX 作者更新后会跟进
+5. 网速问题，目前只支持 20Mhz，请参照 [performance-sucks](https://openintelwireless.github.io/itlwm/FAQ.html#performance-sucks)
 
 ## 补充说明
 
