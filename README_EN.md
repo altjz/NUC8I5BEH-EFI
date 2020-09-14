@@ -61,6 +61,8 @@ fn=".`date +%s`" && sudo mv /System/Library/CoreServices/Menu\ Extras/ExpressCar
 
 4. Network Monitoring (iStats Menu) Download Speed awalys be 0, Solution Please reference this issue [网速监控下载速度一直是0](https://github.com/OpenIntelWireless/itlwm/issues/172)
 
+5. Not working on Bluetooth Low Energy 4.0 (Not working with my mouse Logitech Master 2s)
+
 ## Supplyment
 
 - Wifi: Thanks to [itlwm](https://github.com/OpenIntelWireless/itlwm)，Now we can use the internal Wifi, Please Download the GUI WIFI [HeliPort](https://github.com/OpenIntelWireless/HeliPort), And Please remember enable the Wifi/Bluetooth in BIOS
