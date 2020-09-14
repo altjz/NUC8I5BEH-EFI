@@ -4,25 +4,24 @@
 
 ## 硬件配置
 
-| 硬件          | 型号                  | 备注                                 |
-| ------------- | --------------------- | ------------------------------------ |
-| 主机型号      | NUC8I5BEH             |                                      |
-| BIOS 版本     | 75                    |                                      |
-| 网卡          | 原生 Intel            |                                      |
-| 蓝牙          | 原生 Intel            |                                      |
-| 内存          | 协德 DDR4 2666 16G x2 | 虽然内存是 2666 德，但只支持 2400    |
-| 硬盘          | 三星 970 Evo 500G     |                                      |
-| 显示器 HDMI   | HKC T7000 2K          | 老显示器，接 HDMI 口                 |
-| 显示器 USBC-C | 15.6 便携显示器       | 供电和信号都使用 USB-C（简称一线通） |
-| 键盘          | Filco Minila air 67   | BT3.0                                |
-| 鼠标          | 罗技 Logitech M720    | BT4.0 + USB                          |
+| 硬件          | 型号                    | 备注                                 |
+| ------------- | ----------------------- | ------------------------------------ |
+| 主机型号      | NUC8I5BEH               |                                      |
+| BIOS 版本     | 75                      |                                      |
+| 网卡          | 原生 Intel              |                                      |
+| 蓝牙          | 原生 Intel              |                                      |
+| 内存          | 协德 DDR4 2666 16G x2   | 虽然内存是 2666 德，但只支持 2400    |
+| 硬盘          | 三星 970 Evo 500G       |                                      |
+| 显示器 HDMI   | HKC T7000 2K            | 老显示器，接 HDMI 口                 |
+| 显示器 USBC-C | 15.6 便携显示器         | 供电和信号都使用 USB-C（简称一线通） |
+| 键盘          | Filco Minila air 67     | BT3.0                                |
+| 鼠标          | 罗技 Logitech Master 2s | USB (BLE 4.0无法使用)                |
 
 ## BIOS 设置
 
-~~1. 禁用内置的蓝牙/WIFI~~  
-2. 禁用 Secure Boot  
-3. 禁用 Legacy Boot  
-4. 禁用 LAN / WIFI Boot  
+1. 禁用 Secure Boot  
+2. 禁用 Legacy Boot  
+3. 禁用 LAN / WIFI Boot  
 
 ## OpenCore Version
 

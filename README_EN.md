@@ -4,6 +4,10 @@
 
 ## Change Log
 
+### 2020-09-14
+
+    1. Fix Bluetooth cannot turn off.
+
 ### 2020-08-15
 
     1. Using Open Core instead of Clover
@@ -25,10 +29,9 @@
 
 ## BIOS Settings
 
-~~1. Disable Bluetooth/WIFI~~  
-2. Disable Secure Boot  
-3. Disable Legacy Boot  
-4. Disable LAN / WIFI Boot  
+1. Disable Secure Boot  
+2. Disable Legacy Boot  
+3. Disable LAN / WIFI Boot  
 
 ## OpenCore Version
 
@@ -55,20 +58,17 @@
 fn=".`date +%s`" && sudo mv /System/Library/CoreServices/Menu\ Extras/ExpressCard.menu /System/Library/CoreServices/Menu\ Extras/ExpressCard.menu$fn && sudo touch /System/Library/CoreServices/Menu\ Extras/ExpressCard.menu
 ```
 
-2. ~~OS can't be waken by Bluetooth~~
+2. HandOff Airdrop Not Working at all, Intel Wifi Driver using Ethernet actually.
 
-3. HandOff Airdrop Not Working at all, Intel Wifi Driver using Ethernet actually.
+3. Network Monitoring (iStats Menu) Download Speed awalys be 0, Solution Please reference this issue [网速监控下载速度一直是0](https://github.com/OpenIntelWireless/itlwm/issues/172)
 
-4. Network Monitoring (iStats Menu) Download Speed awalys be 0, Solution Please reference this issue [网速监控下载速度一直是0](https://github.com/OpenIntelWireless/itlwm/issues/172)
-
-5. Not working on Bluetooth Low Energy 4.0 (Not working with my mouse Logitech Master 2s)
+4. Not working on Bluetooth Low Energy 4.0 (Logitech Master 2s)
 
 ## Supplyment
 
 - Wifi: Thanks to [itlwm](https://github.com/OpenIntelWireless/itlwm)，Now we can use the internal Wifi, Please Download the GUI WIFI [HeliPort](https://github.com/OpenIntelWireless/HeliPort), And Please remember enable the Wifi/Bluetooth in BIOS
 - SerialNumber: Please modify your Serial Number，you could use Clover Configurator to generate a new one.
 - NUC8I7BEx: CPU is the only difference, I suppose this should work.
-- Thunderbolt3：unkown, I don't have any Thunderbolt 3 device (My monitor using Type-C DP not Thunderbolt)
 
 ## References
 
