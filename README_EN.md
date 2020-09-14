@@ -62,7 +62,7 @@ fn=".`date +%s`" && sudo mv /System/Library/CoreServices/Menu\ Extras/ExpressCar
 
 3. Network Monitoring (iStats Menu) Download Speed awalys be 0, Solution Please reference this issue [网速监控下载速度一直是0](https://github.com/OpenIntelWireless/itlwm/issues/172)
 
-4. Not working on Bluetooth Low Energy 4.0 (Logitech Master 2s)
+4. Not working on Bluetooth Low Energy 4.0 (Logitech Master 2s), Please refer [Comparability issue with Bluetooth 4.x devices](https://github.com/OpenIntelWireless/IntelBluetoothFirmware/issues/51#issuecomment-589949327)
 
 ## Supplyment
 

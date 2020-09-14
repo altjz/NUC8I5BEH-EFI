@@ -57,7 +57,7 @@
 
 4. 网速问题，目前只支持 20Mhz，请参照 [performance-sucks](https://openintelwireless.github.io/itlwm/FAQ.html#performance-sucks)
 
-5. 蓝牙 4.0 不支持 （我测试了 罗技 Master 2s 用蓝牙无法连接，但是键盘蓝牙 3.0 和 音箱 2.0可以连接）
+5. 不支持 蓝牙 4.0 请参照：[Comparability issue with Bluetooth 4.x devices](https://github.com/OpenIntelWireless/IntelBluetoothFirmware/issues/51#issuecomment-589949327)
 
 ## 补充说明
 
